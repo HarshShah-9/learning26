@@ -30,8 +30,8 @@ class Location(models.Model):
     address = models.CharField(max_length=200)
     total_slots = models.IntegerField()
     available_slots = models.IntegerField()
-    latitude = models.DecimalField(max_digits=10)
-    longitude = models.DecimalField(max_digits=10)
+    latitude = models.DecimalField(max_digits=10,decimal_places=6)
+    longitude = models.DecimalField(max_digits=10,decimal_places=6)
     status = models.CharField(max_length=20)
 
     class Meta:
