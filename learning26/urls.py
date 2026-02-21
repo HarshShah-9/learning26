@@ -29,14 +29,14 @@ urlpatterns = [
     path("about/",views.AboutUs),
     path("contact/",views.contactUs),
     path("",views.home),
-    #http://127.0.0.1/:8000/recap
     path("recap/",views.reacp),
     path("recipe/",views.recipe),
 
 
     path("student/",include("student.urls")),
     path("employee/",include("employee.urls")),
-    path("services/",include("services.urls"))
+    path("services/",include("services.urls")),
+    path("core/",include("core.urls"))
     
 
    
